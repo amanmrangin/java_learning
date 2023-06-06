@@ -8,7 +8,7 @@
   - Inheritance: Single Level, Multi Level, Heirarchical, and Hybrid
   - Encapsulation: Protecting the code and data (state) of a single class from outside of the class using private, protected and setters/getter methods.
   - Compile-time Polymorphism: Method overloading, resolved at Compile time
-  - Runtime Polymorphism: Method Overriding, determined only runtime
+  - Runtime Polymorphism: Method Overriding, determined only runtime. Single action (method) in multiple ways
   - Aggregation Assocation: Weak association to allow objects to exist independently
   - Composition Assocation: Strong assocation (Part of Whole: Part cannot exist without a whole).  When a School object (Whole) is destroyed the associated Rooms (part) will automatically be destoryed.
 - Use primitives over Wrapper classes to avoid the performance issues while Autoboxing/Unboxing and in NullPointerExceptions.
@@ -25,6 +25,12 @@
 - Use **Constants** in a Final class or **Enum**s for readability and Type safety.
 - Design a every project to use custome Log Appender to mask the sensitive data from the log output, configure in _application.properties_ or _application.yml_ files
 - Employ to use _Code Coverage_ (**SonarLint**) tools and fix the recommendations from the early development of project
+- Apply **SOLID** design principles.
+  - Single Responsiblity: Class should have single responsibility not combining with other domain/responsibility
+  - Open for Extention, Closed for Modification: A class should be desgined for extenstion (subclass inheritance) and bug fixes. Not to modify (add new behaviour) unless needed
+  - Liskov Substitution: An instance of Subclass can repalce the instance of Superclass without disrupting behavior. There are some exceptions to change the classes to avoid violation of this rule
+  - Interface Segragation: Split the large behavior (multiple methods) of interface into multiple smaller interfaces. This allows the subclasses to implement only required behaviour.
+  - Dependency Invesion: Decouple the classes/modules with abstraction to avoid the dependency.  
 
 
 
