@@ -3,9 +3,18 @@
 
 ## Best Practices
 - Use **has-a** (Composition) and **is-a** (Inheritance of another) relationships carefully to as **has-a** offers more flexibility.
+- Use OOPS principles such as 
+  - Abstraction (Data Hiding): Abstract Classes, Abstract Methods
+  - Inheritance: Single Level, Multi Level, Heirarchical, and Hybrid
+  - Encapsulation: Protecting the code and data (state) of a single class from outside of the class using private, protected and setters/getter methods.
+  - Compile-time Polymorphism: Method overloading, resolved at Compile time
+  - Runtime Polymorphism: Method Overriding, determined only runtime
+  - Aggregation Assocation: Weak association to allow objects to exist independently
+  - Composition Assocation: Strong assocation (Part of Whole: Part cannot exist without a whole).  When a School object (Whole) is destroyed the associated Rooms (part) will automatically be destoryed.
 - Use primitives over Wrapper classes to avoid the performance issues while Autoboxing/Unboxing and in NullPointerExceptions.
+- Initialize the Collection objects with empty size rather than Null to avoid the NullPointerException. Does not cause any performance issues.
 - Initialize the variables with default values to avoid NullPointerException
-- Use Null check techniques (instanceof, Objects.rqeueireNonNull(obj), Optional.ofNullable(obj) and Optional.isPresent(), @NonNull, @Nullable annotations)
+- Use Null check techniques (instanceof, Objects.rqeueireNonNull(obj), Optional.ofNullable(obj) and Optional.isPresent(), @NonNull, @Nullable annotations, CollectionUtils.isEmpty())
 - Try with Resources: Practice to close the Resources automatically, even in exceptions scenarios, when are no longer used/referenced.
 - Must log every Exception with Error, Bubble the Exceptions to caller by **throws** at method signature, or _rethrow_ it from the _Catch_ block.
 - Use Collections with Generics (diamon instead of raw/traditional collections
