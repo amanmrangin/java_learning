@@ -26,11 +26,11 @@
 - Design a every project to use custome Log Appender to mask the sensitive data from the log output, configure in _application.properties_ or _application.yml_ files
 - Employ to use _Code Coverage_ (**SonarLint**) tools and fix the recommendations from the early development of project
 - Apply **SOLID** design principles.
-  - Single Responsiblity: Class should have single responsibility not combining with other domain/responsibility
-  - Open for Extention, Closed for Modification: A class should be desgined for extenstion (subclass inheritance) and bug fixes. Not to modify (add new behaviour) unless needed
-  - Liskov Substitution: An instance of Subclass can repalce/substitue the instance of Superclass without disrupting behavior. There are some exceptions to change the classes to avoid violation of this rule
-  - Interface Segragation: Split the large behavior (multiple methods) of interface into multiple smaller interfaces. This allows the subclasses to implement only required behaviour. No class should be forced to implement the method of an interface that does not require it.
-  - Dependency Invesion: Decouple the classes/modules with abstraction to avoid the dependency.  
+  - **S**ingle Responsiblity: Class should have single responsibility not combining with other domain/responsibilities that are not relevant to the java class.  
+  - **O**pen for Extention, Closed for Modification: A class should be desgined for extenstion (subclass inheritance) and bug fixes. Not to modify (add new behaviour) unless needed
+  - **L**iskov Substitution: An instance of Subclass can repalce/substitue the instance of Superclass without disrupting behavior. There are some exceptions to change the classes to avoid violation of this rule
+  - **I**nterface Segragation: Split the large behavior (multiple methods) of interface into multiple smaller interfaces. This allows the subclasses to implement only required behaviour. No class should be forced to implement the method of an interface that does not require it.
+  - **D**ependency Invesion: Decouple the classes/modules with **abstraction** to avoid the **concrete** implementation of dependency.  
   - DRY (Don't Repeat Yourself): Don't write the behavior/method multiple times in a project. Use the Resuability in mind to write once.
   - KISS (Keep it Simple Stupid): Keep the code readable and simple and reusable
 
