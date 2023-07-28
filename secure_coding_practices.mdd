@@ -1,0 +1,5 @@
+
+## Prevent SQL Injection Techniques
+  * Input should be JavaScript escaped or validate before being used
+  * Apply allowlist validation on all user input
+Path Traversal Attacks: It is recommended to validate and sanitize user input parameters before using them when accessing application files. A regular expression hshould be used to ensure that the provided filename parameter only contain authorized characters. This will prevent a malicious actor from proiding characters that would allo  Path Traversal attacks
